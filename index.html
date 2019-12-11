@@ -1,28 +1,28 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>AAPay</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
 </head>
 <body>
     <label>
         您点的商品原价：
-        <input type="number">
+        <input id="yuanjia" type="number">
     </label>
     <label>
         你们的商品总价：
-        <input type="number">
+        <input id="totalYuanjia" type="number">
     </label>
-  <label>
+    <label>
         你们的实付总价：
         <input id="totalShifu" type="number">
     </label>
-    <button>您的实付</button>
-    <input type="text" disabled>
+    <button id="getAA">您的实付</button>
+    <input id="showAA" type="text" disabled>
 
-<script>
+    <script>
         var getAA = document.getElementById("getAA"),
             yuanjia = document.getElementById("yuanjia"),
             totalYuanjia = document.getElementById("totalYuanjia"),
