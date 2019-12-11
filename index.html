@@ -17,5 +17,16 @@
     </label>
     <button>您的实付</button>
     <input type="text" disabled>
+
+<script>
+        var getAA = document.getElementById("getAA"),
+            yuanjia = document.getElementById("yuanjia"),
+            totalYuanjia = document.getElementById("totalYuanjia"),
+            totalShifu = document.getElementById("totalShifu"),
+            showAA = document.getElementById("showAA");
+        getAA.onclick = function(){
+            showAA.value = (yuanjia/totalYuanjia)*totalShifu;
+        }
+    </script>
 </body>
 </html>
